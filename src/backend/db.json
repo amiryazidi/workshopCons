@@ -1,0 +1,83 @@
+{
+  "residence": [
+    {
+      "id": 1,
+      "name": "El fel",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/R1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "El yasmine",
+      "address": "Ezzahra",
+      "image": "../../assets/images/R2.jpg"
+    }
+  ],
+  "appartement": [
+    {
+      "apartNum": "300",
+      "floorNum": 33,
+      "surface": "22",
+      "terrace": "yes",
+      "surfaceTerrace": "",
+      "category": "test",
+      "description": "test  modiiiiff",
+      "residence": "1",
+      "id": 2
+    },
+    {
+      "apartNum": "111",
+      "floorNum": 33222,
+      "surface": "22",
+      "terrace": "No",
+      "surfaceTerrace": "",
+      "category": "test",
+      "description": "Consectetur perfere",
+      "residence": {
+        "id": 1,
+        "name": "El fel",
+        "address": "Borj Cedria",
+        "image": "../../assets/images/R1.jpeg"
+      },
+      "id": 3
+    },
+    {
+      "id": 3,
+      "apartNum": "300",
+      "floorNum": 33,
+      "surface": "22",
+      "terrace": "No",
+      "surfaceTerrace": "",
+      "category": "test",
+      "description": "Consectetur perfere",
+      "residence": {
+        "id": 2,
+        "name": "El yasmine",
+        "address": "Ezzahra",
+        "image": "../../assets/images/R2.jpg"
+      }
+    },
+    {
+      "apartNum": "111111111",
+      "floorNum": 919,
+      "surface": "",
+      "terrace": "yes",
+      "surfaceTerrace": "",
+      "category": "",
+      "description": "Aut est qui aperiam ",
+      "residence": "1",
+      "id": 4
+    },
+    {
+      "apartNum": "709",
+      "floorNum": 1111111,
+      "surface": "",
+      "terrace": "yes",
+      "surfaceTerrace": "",
+      "category": "",
+      "description": "Consectetur magna et",
+      "residence": "1",
+      "id": 5
+    }
+  ]
+}

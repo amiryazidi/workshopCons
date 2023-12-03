@@ -1,0 +1,32 @@
+<div *ngIf="list && list.length!=0 else alt">
+    <h2 align="center">Apartments</h2>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchApart">
+    <table class="table">
+
+        <tr>
+            <th scope="col">appartNum</th>
+            <th scope="col">floorNum</th>
+            <th scope="col">surface</th>
+            <th scope="col">terrace</th>
+            <th scope="col">category</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let A of list">
+            <td scope="row" *ngIf="searchApart==A.surface || !searchApart">{{A.appartNum}}</td>
+            <td *ngIf="searchApart==A.surface || !searchApart">{{A.floorNum}}</td>
+            <td *ngIf="searchApart==A.surface || !searchApart">{{A.surface}}</td>
+            <td *ngIf="searchApart==A.surface || !searchApart">{{A.terrace}}</td>
+            <td *ngIf="searchApart==A.surface || !searchApart">{{A.category}}</td>
+            <td *ngIf="searchApart==A.surface || !searchApart"><button class="btn btn-primary" (click)="likeApartment(A.id)">Like</button></td>
+            <td *ngIf="searchApart==A.surface || !searchApart">
+                <button class="btn btn-primary" (click)="deleteAppart(A.id)">Delete</button></td>
+            <button class="btn btn-info " [routerLink]="['/update',A.id]">Update</button>
+        </tr>
+
+    </table>
+</div>
+<ng-template #alt>
+    <h2 *ngIf=" list " align="center ">No appartments found!</h2>
+</ng-template>
+
+<button class="btn btn-primary " routerLink="/addApart">Add new Apartment</button>
